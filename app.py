@@ -9,11 +9,10 @@ app = Flask(__name__)
 
 DBHOST = os.environ.get("DBHOST") or "localhost"
 DBUSER = os.environ.get("DBUSER") or "root"
-DBPWD = os.environ.get("DBPWD") or "pass"   
+DBPWD = os.environ.get("DBPWD") or "pass"
 DATABASE = os.environ.get("DATABASE") or "employees"
 COLOR_FROM_ENV = os.environ.get('APP_COLOR') or "lime"
-DBPORT = int(os.environ.get("DBPORT") or 3306)  
-
+DBPORT = int(os.environ.get("DBPORT"))
 
 # Create a connection to the MySQL database
 db_conn = connections.Connection(
@@ -24,8 +23,6 @@ db_conn = connections.Connection(
     db= DATABASE
     
 )
-
-
 output = {}
 table = 'employee';
 
@@ -94,7 +91,7 @@ def FetchData():
     cursor = db_conn.cursor()
 
     try:
-        cursor.execute(select_sql, (emp_id,))
+        cursor.execute(select_sql,(emp_id))
         result = cursor.fetchone()
         
         # Add No Employee found form
