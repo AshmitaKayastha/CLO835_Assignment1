@@ -12,11 +12,7 @@ INSERT INTO employee VALUES ('1','Ashmita','Kayastha','Student','Scarborough');
 INSERT INTO employee VALUES ('2','Amanda','Williams','Smile','USA');
 INSERT INTO employee VALUES ('3','Alan','Williams','Empathy','Canada');
 INSERT INTO employee VALUES ('4','Vahab','Shalchain','Professor','Canada');
-INSERT INTO employee VALUES ('5','Ala','Will','Engineer','Canada');
-INSERT INTO employee VALUES ('6','Elon','Musk','Engineer','USA');
-INSERT INTO employee VALUES ('7', 'Bob', 'Liam', 'Doctor', 'China');
-INSERT INTo employee VALUES ('8', 'liam', 'Bob', 'Doctor', 'Canada');
-INSERT INTo employee VALUES ('9', 'John', 'Bob', 'IT Support', 'Canada');
+
 
 
 SELECT * FROM employee;
