@@ -28,4 +28,4 @@ jobs:
       - name: Build and Push MySQL Image  
         run: |  
           docker build -t ${{ steps.ecr-login.outputs.registry }}/mysql:latest -f Dockerfile_mysql .  
-          docker push ${{ steps.ecr-login.outputs.registry }}/mysql:latest  
+          docker push ${{ steps.ecr-login.outputs.registry }}/mysql:v2  
