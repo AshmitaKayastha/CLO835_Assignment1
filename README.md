@@ -11,7 +11,7 @@ python3 app.py
 ```
 
 # Building and running 2 tier web application locally
-### Building mysql docker image 
+### Building mysql docker image2j 
 ```
 docker build -t my_db -f Dockerfile_mysql . 
 ```
