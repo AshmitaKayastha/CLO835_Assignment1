@@ -33,7 +33,7 @@ docker inspect <container_id>
 ```
 
 
-### Example when running DB runs as a docker container and app is running locally
+### Example when running DB runs as a docker container and app is running locallyq
 ```
 export DBHOST=127.0.0.1
 export DBPORT=3307
